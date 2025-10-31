@@ -86,8 +86,9 @@ Create a .env file in client/:
 VITE_API_BASE=http://localhost:5000/api
 
 Run the frontend
-
+```bash
 npm run dev
+```
 
 
 Frontend runs at: http://localhost:5173
