@@ -110,9 +110,13 @@ Create a new Web Service → link to backend/ folder.
 Add environment variables:
 
 MONGO_URI=your_mongodb_connection_uri
+
 JWT_SECRET=your_secret_key
+
 CLIENT_ORIGIN=https://expense-tracker-rxgx.vercel.app
+
 NODE_ENV=production
+
 PORT=5000
 
 
@@ -132,22 +136,6 @@ node index.js
 ```
 
 ----------------------------------------------------------
-
-
-🧠 API Endpoints
-Method	Endpoint	Description	Auth
-POST	/api/auth/signup	Register new user	❌
-POST	/api/auth/login	Login user (sets cookie)	❌
-POST	/api/auth/logout	Logout user (clears cookie)	✅
-GET	/api/expenses	List user’s expenses	✅
-POST	/api/expenses	Create new expense	✅
-PUT	/api/expenses/:id	Update existing expense	✅
-DELETE	/api/expenses/:id	Delete expense	✅
-
-✅ Auth-protected routes require a valid JWT cookie.
-
-
---------------------------------------
 
 ✨ Credits
 
