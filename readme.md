@@ -52,10 +52,15 @@ npm install
 ```
 
 Create a .env file in backend/:
+
 MONGO_URI=your_mongodb_connection_uri
+
 JWT_SECRET=your_secret_key
+
 CLIENT_ORIGIN=http://localhost:5173
+
 NODE_ENV=development
+
 PORT=5000
 
 Run the backend
