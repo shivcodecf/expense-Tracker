@@ -66,7 +66,8 @@ PORT=5000
 Run the backend
 
 ```bash
-npm start
+
+npm run dev
 
 ```
 
@@ -85,6 +86,7 @@ Create a .env file in client/:
 VITE_API_BASE=http://localhost:5000/api
 
 Run the frontend
+
 npm run dev
 
 
