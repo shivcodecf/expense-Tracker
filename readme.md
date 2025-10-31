@@ -43,8 +43,12 @@ git clone https://github.com/your-username/expense-tracker.git
 cd expense-tracker
 
 2️⃣ Setup the backend
+```bash
+
 cd backend
 npm install
+
+```
 
 Create a .env file in backend/:
 MONGO_URI=your_mongodb_connection_uri
@@ -54,14 +58,20 @@ NODE_ENV=development
 PORT=5000
 
 Run the backend
+
+```bash
 npm start
+
+```
 
 
 Backend runs at: http://localhost:5000
 
 3️⃣ Setup the frontend
+```bash
 cd ../client
 npm install
+```
 
 Create a .env file in client/:
 VITE_API_BASE=http://localhost:5000/api
@@ -105,12 +115,15 @@ PORT=5000
 
 
 Build Command:
-
+```bash
 npm install
+```
 
 
 Start Command:
 
-node index.js 
+```bash
 
+node index.js 
 ```
+
