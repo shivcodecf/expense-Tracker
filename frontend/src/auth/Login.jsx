@@ -11,6 +11,8 @@ export default function Login() {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
+  const API_BASE = import.meta.env.VITE_API_BASE
+
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -30,7 +32,7 @@ export default function Login() {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        `${API_BASE}/auth/login`,
         form,
         { withCredentials: true } 
       );

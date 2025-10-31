@@ -12,6 +12,8 @@ export default function Signup() {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
+  const API_BASE = import.meta.env.VITE_API_BASE
+
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -32,7 +34,7 @@ export default function Signup() {
     try {
       // create account
       const res = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        `${API_BASE}/auth/signup`,
         form,
         { withCredentials: true } 
       );
