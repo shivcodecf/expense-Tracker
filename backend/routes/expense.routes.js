@@ -2,17 +2,18 @@ import express from 'express'
 
 
 import { createExpense, deleteExpense, getExpense, updateExpense } from '../controllers/expense.controllers.js';
-import { authOptional } from '../middlewares/auth.js';
+
+import { authRequired } from '../middlewares/auth.js';
 
 const router = express.Router();
 
-router.post("/",authOptional,createExpense);
+router.post("/",authRequired,createExpense);
 
-router.get("/",authOptional,getExpense)
+router.get("/",authRequired,getExpense)
 
-router.put("/:id",authOptional,updateExpense)
+router.put("/:id",authRequired,updateExpense)
 
-router.delete("/:id",authOptional,deleteExpense)
+router.delete("/:id",authRequired,deleteExpense)
 
 
 
