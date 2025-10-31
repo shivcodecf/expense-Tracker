@@ -1,5 +1,5 @@
 import express from 'express'
-import { authRequired } from '../middlewares/auth.js';
+
 
 import { createExpense, deleteExpense, getExpense, updateExpense } from '../controllers/expense.controllers.js';
 import { authOptional } from '../middlewares/auth.js';
