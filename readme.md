@@ -74,6 +74,8 @@ cd ../client
 npm install
 ```
 
+---------------------------------------------------------------------------------
+
 Create a .env file in client/:
 VITE_API_BASE=http://localhost:5000/api
 
@@ -126,5 +128,30 @@ Start Command:
 ```bash
 
 node index.js 
+
 ```
 
+----------------------------------------------------------
+
+
+🧠 API Endpoints
+Method	Endpoint	Description	Auth
+POST	/api/auth/signup	Register new user	❌
+POST	/api/auth/login	Login user (sets cookie)	❌
+POST	/api/auth/logout	Logout user (clears cookie)	✅
+GET	/api/expenses	List user’s expenses	✅
+POST	/api/expenses	Create new expense	✅
+PUT	/api/expenses/:id	Update existing expense	✅
+DELETE	/api/expenses/:id	Delete expense	✅
+
+✅ Auth-protected routes require a valid JWT cookie.
+
+
+--------------------------------------
+
+✨ Credits
+
+Developed by Shivam Yadav
+💻 Backend: Express + MongoDB
+🎨 Frontend: React + TailwindCSS
+☁️ Deployment: Vercel + Render
