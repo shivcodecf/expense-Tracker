@@ -32,7 +32,7 @@ app.use(cors({
   origin: CLIENT_ORIGIN,
   credentials: true,
 }));
-app.options('*', cors({ origin: CLIENT_ORIGIN, credentials: true })); // preflight
+
 
 
 app.use(cookieParser());
